@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FarmDApp Interface</title>
+
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- add jqeury src-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+
+    <!-- Connect Wallet button -->
+    <button id="connectWallet" class="btn btn-primary">Connect Wallet</button>
+
+    <!-- Sales Chart -->
+    <div class="mt-5">
+      <canvas id="salesChart"></canvas>
+    </div> 
+    <!-- MooCoins Section will go here... -->
+  </div>
+
+   <div class="container mt-4">
+    
+    
+
+    
+
+    <!-- Row for options -->
+    <div class="row mt-4">
+      <!-- Option 1 -->
+      <div class="col-md-4">
+        <div class="card" id="cycled">
+          <!-- Add your image source -->
+          <img src="images/image8.jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Walk/Cycle to Farm</h5>
+            <button class="btn btn-primary selectBtn">Select</button>
+          </div>
+        </div>
+      </div>
+      <!-- Option 2 -->
+      <div class="col-md-4">
+        <div class="card" id="bought">
+          <!-- Add your image source -->
+          <img src="images/image7.jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Buy Milk at the Farm</h5>
+            <button class="btn btn-primary selectBtn">Select</button>
+          </div>
+        </div>
+      </div>
+      <!-- Option 3 -->
+      <div class="col-md-4">
+        <div class="card" id="returned">
+          <!-- Add your image source -->
+          <img src="images/image9.jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Reuse Glass Bottle</h5>
+            <button class="btn btn-primary selectBtn">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leaderboard button -->
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <button id="leaderboardBtn" class="btn btn-primary">Leaderboard</button>
+      </div>
+    </div>
+
+    <!-- Canvas for sales chart -->
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <canvas id="salesChart" width="800" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+
+  <!-- Bootstrap JS, Chart.js, and app.js -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include Chart.js -->
+  //<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Include app.js -->
+  <script src="js/app.js"></script>
+</body>
+</html>

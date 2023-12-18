@@ -1,0 +1,28 @@
+{
+  "name": "farmdapptruffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2",
+    "chai": "^4.3.10",
+    "chart.js": "^4.4.1",
+    "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "mochai": "^0.2.5",
+    "truffle": "^5.5.19",
+    "uws": "^200.0.0",
+    "web3": "^4.3.0"
+  }
+}
