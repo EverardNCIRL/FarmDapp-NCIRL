@@ -16,10 +16,11 @@ App = {
           App.web3Provider = window.ethereum;
           try {
               // Request account access
-              await window.ethereum.enable();
+             // await window.ethereum.enable(); REMOVE DEPRECATED CODE
+              await window.ethereum.request({ method: 'eth_requestAccounts' });
               return App.initContract();
           } catch (error) {
-              console.error("User denied account access");
+              console.error("User denied account access", error);
           }
       }
       // Legacy dapp browsers
