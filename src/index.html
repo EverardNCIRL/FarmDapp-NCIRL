@@ -15,10 +15,17 @@
 
 <body>
   <div class="container mt-5">
-
+<!--///////////////////////////////////
+SECTION 1
+////////////////////////////->>
     <!-- Connect Wallet button -->
     <button id="connectWallet" class="btn btn-primary">Connect Wallet</button>
 
+   
+
+    <!--///////////////////////////////////
+SECTION 2
+////////////////////////////->>
     <!-- Sales Chart -->
     <div class="mt-5">
       <canvas id="salesChart"></canvas>
@@ -99,5 +106,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Include app.js -->
   <script src="js/app.js"></script>
+  <!--//////////////////////////-->
+  <!-- JS SECTION 1-->
+  <!--//////////////////////////-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var connectWalletButton = document.getElementById('connectWallet');
+      
+      connectWalletButton.addEventListener('click', function() {
+        App.initWeb3();
+      });
+    });
+  </script>
 </body>
 </html>
